@@ -1,0 +1,22 @@
+.promo {
+    min-height: 802px;
+    position: relative;
+    background: url('../img/promo/bg.jpg') no-repeat 50%/cover;
+    padding-top: 200px;
+    &__title {
+        margin-top: 10px;
+        width: 510px;
+        white-space: break-spaces;
+    }
+    &__btns {
+        margin-top: 35px;
+        display: flex;
+        align-items: center;
+        gap: 44px;
+    }
+    &__subtitle {
+        position: relative;
+        padding-left: 10px;
+        @include before-circles;
+    }
+}
