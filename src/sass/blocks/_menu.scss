@@ -1,0 +1,102 @@
+.hamburger {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+    cursor: pointer;
+    &__line {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        &_long {
+            width: 36px;
+        } 
+    }   
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.6s all;
+    &.active {
+        visibility: visible;
+        left: 0;
+        opacity: 1;
+    }
+    &__block {
+        position: relative;
+        width: 345px;
+        background-color: $main-color;
+        height: 100%;
+        padding-top: 140px;
+        padding-left: 40px;
+        z-index: 100;
+        transition: 0.6s all;
+    }
+    &__close {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+    &__list {
+        list-style-type: none;
+        padding-left: 25px;
+    }
+    &__link {        
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        position: relative;
+        a {
+            color: #FFF;
+        }
+        &::before {
+            content: "";
+            display: block;
+            width: 15px;
+            height: 15px;
+            border: 1px solid black;
+            border-radius: 100%;
+            position: absolute;
+            left: -35px;
+            top: 10px;
+            transition: 0.6s all;
+        }
+        &:hover {
+            &::before {
+                background-color: rgba(255, 255, 255, 0.6);
+            }
+        }
+    }
+    &__social {
+         position: absolute;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 90px;
+         bottom: 50px;
+         left: 50%;
+         transform: translateX(-50%);
+    }
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.55;
+    }
+}
