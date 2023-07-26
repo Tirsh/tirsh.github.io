@@ -1,17 +1,6 @@
 .resume {
     min-height: 685px;
     padding-bottom: 120px;
-    &__title {
-        text-align: center;
-        position: relative;
-        padding-top: 6px;
-        @include before-circles;
-        &:before {             
-            left: 50%;
-            transform: translateX(-50%);
-            top: 0;
-        }
-    }
     &__subtitle {
         text-align: center;
     }

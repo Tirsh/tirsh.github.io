@@ -21,4 +21,15 @@
     &_fz20 {
         font-size: 20px;
     }
+    &__section-title {
+        text-align: center;
+        position: relative;
+        padding-top: 6px;
+        @include before-circles;
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+        }
+    }
 }
