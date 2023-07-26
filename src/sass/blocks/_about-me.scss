@@ -19,16 +19,15 @@
     }
     &__subtitle {
         padding-left: 6px;
+        padding-top: 6px;
         position: relative;
         @include before-circles;
     }
     &__title {
         margin-top: 6px;
     }
-    &__divider {
-        width: 60px;
-        height: 3px;
-        background-color: $main-color;
+    .divider {
+        margin: 0;
     }
     &__introduction {
         margin-top: 20px;

@@ -14,9 +14,10 @@
         align-items: center;
         gap: 44px;
     }
-    &__subtitle {
+    .promo__subtitle {
         position: relative;
         padding-left: 10px;
+        padding-top: 6px;
         @include before-circles;
     }
 }
