@@ -18,8 +18,9 @@ a {
     text-decoration: none;
 }
 .center {
-    padding-right: calc(50% - $content-width / 2);
-    padding-left: calc(50% - $content-width / 2);
+    --content-width: $content-width;
+    padding-right: calc(50% - var(--content-width) / 2);
+    padding-left: calc(50% - var(--content-width) / 2);
 }
 .divider {
     width: 60px;

@@ -6,8 +6,9 @@
 
 @media  (max-width: 1200px)   {
     .center {
-        padding-right: calc(50% - 960px / 2);
-        padding-left: calc(50% - 960px / 2);
+        --content-width: 960px;
+        // padding-right: calc(50% - 960px / 2);
+        // padding-left: calc(50% - 960px / 2);
     }
     .side-panel {
         display: none;
@@ -65,8 +66,9 @@
 
 @media (max-width: 992px) {
     .center {
-        padding-right: calc(50% - 720px / 2);
-        padding-left: calc(50% - 720px / 2);
+        --content-width: 720px;
+        // padding-right: calc(50% - 720px / 2);
+        // padding-left: calc(50% - 720px / 2);
     }
     .title {
         &_fz36 {
@@ -121,8 +123,9 @@
 
 @media (max-width: 768px) {
     .center {
-        padding-right: calc(50% - 540px / 2);
-        padding-left: calc(50% - 540px / 2);
+        --content-width: 540gulppx;
+        // padding-right: calc(50% - 540px / 2);
+        // padding-left: calc(50% - 540px / 2);
     }
     .title {
         &_fz48 {
