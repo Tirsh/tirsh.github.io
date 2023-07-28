@@ -11,7 +11,7 @@
     &__divider {
         width: 2px;
         height: 79px;
-        background-color: #fff;
+        background-color: $side-panel-color;
     }
     &__text {
         display: block;
@@ -23,5 +23,11 @@
             transform: rotate(270deg) translate(-42%, -260%);
             width: 148px;
         }
+    }
+    &__link {
+        path {
+            fill: $side-panel-color;
+        }
+
     }
 }

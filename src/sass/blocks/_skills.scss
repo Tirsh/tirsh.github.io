@@ -7,6 +7,7 @@
         margin: 60px 10px 0;
         display: grid;
         grid-template-columns: repeat(4, 270px);
+        justify-content: center;
         gap: 13px;
     }
     &__item {
@@ -54,7 +55,7 @@
             position: absolute;
             height: 14px;
             border-radius: 4px;
-            background: #FFA501;
+            background: $main-color;
             top: 0;
             left: 0;
         }
