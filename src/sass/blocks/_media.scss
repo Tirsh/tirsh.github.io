@@ -7,8 +7,6 @@
 @media  (max-width: 1200px)   {
     .center {
         --content-width: 960px;
-        // padding-right: calc(50% - 960px / 2);
-        // padding-left: calc(50% - 960px / 2);
     }
     .side-panel {
         display: none;
@@ -67,8 +65,6 @@
 @media (max-width: 992px) {
     .center {
         --content-width: 720px;
-        // padding-right: calc(50% - 720px / 2);
-        // padding-left: calc(50% - 720px / 2);
     }
     .title {
         &_fz36 {

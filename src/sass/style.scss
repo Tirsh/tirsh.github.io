@@ -18,7 +18,7 @@ a {
     text-decoration: none;
 }
 .center {
-    --content-width: $content-width;
+    --content-width: 1140px;
     padding-right: calc(50% - var(--content-width) / 2);
     padding-left: calc(50% - var(--content-width) / 2);
 }
@@ -41,5 +41,6 @@ a {
 @import 'blocks/portfolio';
 @import 'blocks/prices';
 @import 'blocks/contacts';
+@import 'blocks/arrow';
 
 @import 'blocks/media';
