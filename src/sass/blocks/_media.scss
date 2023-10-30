@@ -42,7 +42,8 @@
     }
     .portfolio {
         &__wrapper {
-            grid-template: repeat(auto-fit, 280px) / repeat(auto-fit, 280px);
+            grid-template:  480px / repeat(auto-fit, 380px);
+            grid-auto-rows: 480px;
             justify-content: center;
             gap: 30px;
             .horizontal, .vertical {
@@ -119,9 +120,8 @@
 
 @media (max-width: 768px) {
     .center {
-        --content-width: 540gulppx;
-        // padding-right: calc(50% - 540px / 2);
-        // padding-left: calc(50% - 540px / 2);
+        --content-width: 540px;
+
     }
     .title {
         &_fz48 {
